@@ -1,0 +1,137 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #451010;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.table {
+  margin-top: 5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+table th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a6a7b2;
+  padding-bottom: 2.5rem;
+  background-color: white;
+}
+table .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+table .user-avatar {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+table td {
+  padding: 2.5rem 0;
+  background-color: white;
+}
+table tr {
+  border-bottom: 2px solid #e4e4e4;
+}
+table .follow {
+  height: 2.6rem;
+  color: #eee;
+  font-size: 1.4rem;
+  background-color: #ff754c;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  cursor: pointer;
+}
+table .badge {
+  height: 2.6rem;
+  color: #ffa2c0;
+  font-size: 1.4rem;
+  background-color: #fff6f9;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  cursor: pointer;
+}
+table .badge1 {
+  height: 2.6rem;
+  color: #6c5dd3;
+  font-size: 1.4rem;
+  background-color: #f0effb;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023.98px) {
+  .table th,
+  .table td {
+    padding-inline: 2.5rem; 
+  }
+}
+caption {
+  /* default : top */
+  caption-side: top;
+  color: var(--primary-color);
+  font-weight: 700;
+} 
+/* Sticky Table */
+.table table tbody td:first-child,
+.table table thead th:first-child {
+  position: sticky;
+  left: 0;
+}
+.table table tbody td:nth-child(2),
+.table table thead th:nth-child(2) {
+  position: sticky;
+  left: 70px;
+}
