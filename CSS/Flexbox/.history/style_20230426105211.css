@@ -1,0 +1,41 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.list {
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.list-item {
+  padding: 1rem;
+  background-color: greenyellow;
+  margin: 0 5px;
+}
